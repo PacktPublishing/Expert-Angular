@@ -1,0 +1,39 @@
+<h1> {{title}}</h1>
+
+<div class="">
+    <p>
+      <!-- <a routerLink="/demo-pipe" routerLinkActive="active">Demo Pipe Example</a> | -->
+      <!--
+        <a routerLink="/about" routerLinkActive="active">About Us</a> |
+        <a routerLink="/services" routerLinkActive="active">Services</a> |
+        <a routerLink="/products" routerLinkActive="active">Products</a>
+        -->
+        <a routerLink="/built-in-pipe" routerLinkActive="active">Built-In Pipes</a> | 
+        <a routerLink="/demo-pipe" routerLinkActive="active">Demo Pipe</a> |
+        <a routerLink="/param-pipe" routerLinkActive="active">Parameterizing Pipes</a> |
+        <a routerLink="/chain-pipe" routerLinkActive="active">Chain Pipes</a> |
+        <a routerLink="/custom-pipe" routerLinkActive="active">Custom Pipe</a>
+        <!--
+        
+        <a routerLink="/first-test" routerLinkActive="active">First Test</a> | 
+        <a routerLink="/learning-component" routerLinkActive="active">Learning Components</a> |
+        <a routerLink="/test-app" routerLinkActive="active">Test App</a> |
+        <a routerLink="/data-binding" routerLinkActive="active">Data Binding</a> |
+        <a routerLink="/test-di" routerLinkActive="active">Test DI</a> |
+       
+          <a routerLink="/providers-example" routerLinkActive="active">Providers Example</a> |
+
+           <a routerLink="/learn-animation" routerLinkActive="active">Learn Animations</a>
+        -->
+         
+    </p>
+     <!-- Logged in as : {{ username }} -->
+    <div class="app-data">
+      <h4>Custom Pipe : {{ productPrice | UpdateTaxPipe }} </h4>
+      <router-outlet></router-outlet>
+    </div>    
+
+   
+</div>
+
+

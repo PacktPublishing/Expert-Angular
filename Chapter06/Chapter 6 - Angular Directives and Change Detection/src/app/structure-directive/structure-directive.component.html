@@ -1,0 +1,27 @@
+<h4>{{title}}</h4>
+<strong>Using ngIf directive</strong>
+
+
+<div *ngIf="isLoggedIn">
+    <p>ngIf condition is true </p>
+      <p>Hello Packt Author</p>
+    </div>
+
+   <div *ngIf="!isLoggedIn">
+      <p>Hello Guest user</p>
+   </div>
+
+<strong>Using ngFor directive - Programming Languages </strong>
+
+<ul>
+<li *ngFor="let language of languages">{{ language.name }}</li>
+</ul>
+
+<strong>Using ngSwitch directive - Tax Identifier </strong> 
+<div [ngSwitch]="taxRate">
+<p *ngSwitchCase="'state'">State Tax</p>
+<p *ngSwitchCase="'fedral'">Fedral Tax</p>
+<p *ngSwitchCase="'medical'">Medical Tax</p>
+<p *ngSwitchDefault>Default</p>
+</div>
+

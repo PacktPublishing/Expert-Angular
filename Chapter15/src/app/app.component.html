@@ -1,0 +1,63 @@
+<h1>
+  {{title}}
+</h1>
+
+{{movie.movie_id}}
+<form [formGroup]="movieForm">
+
+		<p class='error' *ngIf=!movieForm.valid>Error</p>
+		<label>movie_id</label>
+		<p class='error' *ngIf=!movieForm.controls.movie_id.valid>This field is required</p>
+		<input type="text" formControlName="movie_id" [(ngModel)]="movie.movie_id" name="movie_id" ><br/>
+        <label>title</label>
+        <p class='error' *ngIf=!movieForm.controls.title.valid>This field is required</p>
+        <input type="text" formControlName="title" [(ngModel)]="movie.title"><br/>
+        <label>phase</label>
+        <p class='error' *ngIf=!movieForm.controls.phase.valid>This field is required</p>
+        <input type="text" formControlName="phase" [(ngModel)]="movie.phase"><br/>
+        <label>category_name</label>
+        <p class='error' *ngIf=!movieForm.controls.category_name.valid>This field is required</p>
+        <input type="text" formControlName="category_name" [(ngModel)]="movie.category_name"><br/>
+        <label>release_year</label>
+        <p class='error' *ngIf=!movieForm.controls.release_year.valid>This field is required</p>
+        <input type="text" formControlName="release_year" [(ngModel)]="movie.release_year"><br/>
+        <label>running_time</label>
+        <p class='error' *ngIf=!movieForm.controls.running_time.valid>This field is required</p>
+        <input type="text" formControlName="running_time" [(ngModel)]="movie.running_time"><br/>
+        <label>rating_name</label>
+        <p class='error' *ngIf=!movieForm.controls.rating_name.valid>This field is required</p>
+        <input type="text" formControlName="rating_name" [(ngModel)]="movie.rating_name"><br/>
+        <label>disc_format_name</label>
+        <p class='error' *ngIf=!movieForm.controls.disc_format_name.valid>This field is required</p>
+        <input type="text" formControlName="disc_format_name" [(ngModel)]="movie.disc_format_name"><br/>
+        <label>number_discs</label>
+        <p class='error' *ngIf=!movieForm.controls.number_discs.valid>This field is required</p>
+        <input type="text" formControlName="number_discs" [(ngModel)]="movie.number_discs"><br/>
+        <label>viewing_format_name</label>
+        <p class='error' *ngIf=!movieForm.controls.viewing_format_name.valid>This field is required</p>
+        <input type="text" formControlName="viewing_format_name" [(ngModel)]="movie.viewing_format_name"><br/>
+        <label>aspect_ratio_name</label>
+        <p class='error' *ngIf=!movieForm.controls.aspect_ratio_name.valid>This field is required</p>
+        <input type="text" formControlName="aspect_ratio_name" [(ngModel)]="movie.aspect_ratio_name"><br/>
+        <label>status</label>
+        <p class='error' *ngIf=!movieForm.controls.status.valid>This field is required</p>
+        <input type="text" formControlName="status" [(ngModel)]="movie.status"><br/>
+        <label>release_date</label>
+        <p class='error' *ngIf=!movieForm.controls.release_date.valid>This field is required</p>
+        <input type="text" formControlName="release_date" [(ngModel)]="movie.release_date"><br/>
+        <label>budget</label>
+        <p class='error' *ngIf=!movieForm.controls.budget.valid>This field is required</p>
+        <input type="text" formControlName="budget" [(ngModel)]="movie.budget"><br/>
+        <label>gross</label>
+        <p class='error' *ngIf=!movieForm.controls.gross.valid>This field is required</p>
+        <input type="text" formControlName="gross" [(ngModel)]="movie.gross"><br/>
+        <label>time_stamp</label>
+        <p class='error' *ngIf=!movieForm.controls.time_stamp.valid>This field is required</p>
+        <input type="text" formControlName="time_stamp" [(ngModel)]="movie.time_stamp"><br/>
+
+        <button (click)="submit()" type="submit">SUBMIT</button>
+</form>
+
+<ul>
+    <li *ngFor="let movie of movies">{{movie}}</li> 
+</ul>

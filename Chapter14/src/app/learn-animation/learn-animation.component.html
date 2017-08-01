@@ -1,0 +1,38 @@
+<h4 class="packtHeading">
+  Angular Animations
+</h4>
+<!-- Example 1 -->
+<div>
+    <div>
+        <div id="content" [@focusPanel]='state' (mouseover)="toggleBackground()" (mouseout)="toggleBackground()">Watch this fade</div>
+    </div>
+</div>
+
+<!-- Example 2 -->
+<h4 class="packtHeading">Toggle DIV</h4>
+<div [@animationToggle]='contentDiv' class="animateToggle" >
+    This DIV will toggle Show/Hide
+</div>
+<button (click)="showHideDiv()">Show Button </button>
+
+<!-- Example 3 -->
+<h4>Keyframe Effects</h4>
+
+<div class="animateElement" [@animationState]="left" (click)="onClick()">
+	Click to slide right/ Toggle to move div
+</div>
+
+<!-- Example 4 -->
+<h4>Sidebar Collapse Menu</h4>
+
+<button (click)="toggleMenu()" >Toggle Menu</button>
+ <div class="menu" [@toggleMenu]="menuState">
+  <ul >
+    <li>Home</li>
+    <li>Angular</li>
+    <li>Material Design</li>
+    <li>Sridhar Rao</li>
+    <li>Packt Publications</li>
+  </ul>
+</div>
+

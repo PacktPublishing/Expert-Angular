@@ -1,0 +1,10 @@
+.warning {
+    background-color: #ffcc80;
+}
+
+.success{
+    background-color: #e6ee9c;
+}
+.error {
+    background-color: #f44336;
+}

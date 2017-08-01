@@ -1,0 +1,20 @@
+<h3 class="packtHeading">
+ {{myModel}}
+</h3>
+
+<!-- Example -->
+<ul class="cities" *ngFor='let value of values; trackBy: index;'>
+  <li>{{ value }}</li>
+</ul>
+
+<input id="sendEmailCopy" type="checkbox"> Send email copy
+
+<button id="sendMail"(click)="sendMailUpdate()"> Button </button>
+
+<p id="notification">{{ firstName }}</p>
+
+<!-- Example -->
+<p class="afterClick">{{afterClick}}</p>
+
+<!-- Example -->
+<button (click)="sendMail()">Send mail!</button>

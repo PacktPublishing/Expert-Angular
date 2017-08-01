@@ -1,0 +1,15 @@
+
+class Vehicle {  
+    speed: string;
+    constructor(speed: string) {
+        this.speed = speed;
+    }
+} 
+
+class Car extends Vehicle {  
+    color: string;
+    constructor(speed: string, color: string) {
+        super(speed);
+        this.color = color;
+    }
+}

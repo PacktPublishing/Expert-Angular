@@ -1,0 +1,14 @@
+<h4>Template Expressions</h4>
+
+<p> Expression with (+) Operator: <strong>{{ tax+ 10 }}</strong></p>
+
+<p> Expression with (+ and *) Operator: <strong>{{ (tax*50) +10 }} </strong></p>
+
+<h4>Attaching events in templates </h4>
+<button (click)= updateTax()> Update Tax </button>
+
+<h4>Directives inside template syntax </h4>
+<list-products></list-products>
+
+<h4>Binding in templates</h4>
+<button (click)= updateTax() [disabled]="state=='texas'"> Update Tax </button>

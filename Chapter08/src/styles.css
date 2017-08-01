@@ -1,0 +1,30 @@
+/* You can add global styles to this file, and also import other style files */
+body {
+	background-color:#f5f5f5;
+}
+.app-data {
+	background-color: #fff;
+}
+.packtHeading {
+	background-color: rgb(63,81,181);
+	padding:3px;
+	color:#fff;
+}
+
+ul li {
+	padding:5px;
+}
+h4 { background-color:rgb(63,81,181);color:#fff; padding:3px;}
+h1 { background-color:rgb(255, 187, 0);color:#222}
+div {padding: 10px;}
+.app-data {border: 1px solid #b3b3b3;}
+.active {color:#222;text-decoration:none;}
+
+a {
+	color:red;
+	padding:5px;
+}
+
+.special {
+    background-color: #ffffcc;
+}
